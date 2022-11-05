@@ -233,7 +233,7 @@ input[type="search"]:focus {
 }
 
 .manga-chapter {
-    padding: 0px 30px;
+    /* padding: 0px 30px;*/
     margin: 15px 0px;
     max-width: 85.875rem;
     margin-left: auto;
@@ -333,14 +333,20 @@ input[type="search"]:focus {
     margin-bottom: 30px;
     position: relative;
     left: 30px;
-    width: 23.3624454148%;
+    /* width: 23.3624454148%; */
     background-color: #2E2E2E;
+}
+
+.choujin-x:hover {
+    background-color: #FF0000;
+    transition-duration: 0.1s;
 }
 
 #choujin-x-link {
     color: #FFFFFF;
     text-decoration: none;
     font-family: "Avenir Next", sans-serif;
+    font-weight: 600;
 }
 
 .choujin-overflow-hide {
@@ -351,7 +357,7 @@ input[type="search"]:focus {
 .choujin-x-overflow-hide img {
     border: 0;
     /*  max-width: 100%; */
-    width: 306.977px;
+    /* width: 320.7px; */
     height: 245.578px;
 }
 
@@ -381,12 +387,19 @@ input[type="search"]:focus {
     text-decoration: none;
 }
 
+.choujin-x-tagline:hover {
+    background-color: rgba(59, 59, 59, 0.56);
+
+}
+
 .choujin-x-tagline span {
     line-height: 1;
     font-size: 20px;
     text-align: center;
+    font-weight: 500;
     color: #FFFFFF;
 }
+
 
 #chapter-date {
     line-height: 1;
