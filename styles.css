@@ -180,9 +180,6 @@ button[type="submit"] {
     margin-left: -40px;
 }
 
-button[type="submit"]:hover {
-    opacity: 1;
-}
 
 button [type="submit"]:focus,
 input[type="search"]:focus {
@@ -328,40 +325,43 @@ input[type="search"]:focus {
     flex-wrap: wrap;
 }
 
-.choujin-x {
+.manga {
     margin-right: 2.1834061135%;
+    /* width: 23.3624454148%; */
+    background-color: #2E2E2E;
     margin-bottom: 30px;
     position: relative;
     left: 30px;
-    /* width: 23.3624454148%; */
-    background-color: #2E2E2E;
 }
 
-.choujin-x:hover {
+.manga:hover {
     background-color: #FF0000;
     transition-duration: 0.1s;
 }
 
-#choujin-x-link {
+.manga-main-page-link {
     color: #FFFFFF;
     text-decoration: none;
     font-family: "Avenir Next", sans-serif;
     font-weight: 600;
 }
 
-.choujin-overflow-hide {
+
+/*.choujin-overflow-hide*/
+.pos-overflow-hide {
     overflow: hidden;
     position: relative;
 }
 
-.choujin-x-overflow-hide img {
+/*.choujin-overflow-hide*/
+.pos-overflow-hide img {
     border: 0;
     /*  max-width: 100%; */
     /* width: 320.7px; */
     height: 245.578px;
 }
 
-#choujin-title {
+.manga-title {
     line-height: 1;
     font-size: 28px;
     text-align: center;
@@ -372,9 +372,8 @@ input[type="search"]:focus {
     color: #FFFFFF;
 }
 
-.choujin-x-tagline {
+.chapter-details {
     line-height: 1;
-    font-family: "Avenir Next", sans-serif;
     font-size: 20px;
     text-align: center;
     color: #FFFFFF;
@@ -387,12 +386,12 @@ input[type="search"]:focus {
     text-decoration: none;
 }
 
-.choujin-x-tagline:hover {
+.chapter-details:hover {
     background-color: rgba(59, 59, 59, 0.56);
 
 }
 
-.choujin-x-tagline span {
+.latest-chapter-number {
     line-height: 1;
     font-size: 20px;
     text-align: center;
@@ -401,10 +400,68 @@ input[type="search"]:focus {
 }
 
 
-#chapter-date {
+.chapter-release-date {
     line-height: 1;
     font-size: 16px;
     text-align: center;
     font-style: italic;
     color: #FFFFFF;
+}
+
+.whats-hot-this-week {
+    background-image: url('https://dw9to29mmj727.cloudfront.net/sections/2016/82897-82179_13875_READ_header_2000x800_options_colours_grey30.png');
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+}
+
+.row-pos-two {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /*padding: 0 2.1834061135%; */
+    /* max-width: 85.875rem; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .section-two-title-container {
+    /* margin-bottom: 30px; */
+/* margin-top: 15px */
+
+
+.section-two-title {
+    line-height: 1;
+    font-size: 39px;
+    /* float: left; */
+    /* margin-right: 60px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 0px 28px;
+}
+
+.section-two-see-all {
+    font-size: 20px;
+    position: relative;
+    right: 0;
+    bottom: 30px;
+    left: 92.5%;
+    display: block;
+}
+
+.section-two-see-all-link {
+    color: #2E2E2E;
+    background: transparent;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.section-two-see-all-link:hover {
+    color: #FF0000;
+    transition-duration: 0.2s;
+}
+
+.whats-hot-this-week-container {
+    display: flex;
+    flex-wrap: wrap;
 }
