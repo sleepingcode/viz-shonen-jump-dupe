@@ -465,3 +465,49 @@ input[type="search"]:focus {
     display: flex;
     flex-wrap: wrap;
 }
+
+.jump-into-a-new-series {
+    background-color: #F2F2F2;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.section-three-title {
+    line-height: 1;
+    font-size: 39px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 0px 28px;
+
+}
+
+.section-three-see-all {
+    font-size: 20px;
+    position: relative;
+    right: 0;
+    bottom: 30px;
+    left: 92.5%;
+    display: block;
+}
+
+.section-three-see-all-link {
+    color: #2E2E2E;
+    background: transparent;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.section-three-see-all-link:hover {
+    color: #FF0000;
+    transition-duration: 0.2s;
+}
+
+.jump-into-a-new-series-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#font-size {
+    font-size: 27.5px;
+}
