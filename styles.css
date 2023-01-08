@@ -1,3 +1,377 @@
+label[for="toggle"] {
+    position: absolute;
+    top: 25px;
+    color: #2E2E2E;
+    z-index: 6;
+    font-size: 2rem;
+    left: 12px;
+}
+
+.hover-menu {
+    display: none;
+
+}
+
+.navigation--responsive {
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+svg.hamburger {
+    display: none;
+}
+
+@media (max-width: 1104px) and (min-width: 720px) {
+    label[for="toggle"] {
+        color: #FFFFFF;
+    }
+
+    .hover-menu {
+        display: block;
+        position: relative;
+        top: -35px;
+        left: 35px;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    .mini-nav-menu {
+        display: flex;
+        margin-top: 85px;
+        padding-left: 20px;
+    }
+
+    .mini-nav-items:hover {
+        color: #F2F2F2;
+    }
+
+    svg.hamburger {
+        display: block;
+    }
+
+    .navigation--responsive {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #2E2E2E;
+        color: #FFFFFF;
+        width: 300px;
+        position: absolute;
+        height: 80vh;
+        top: -100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        transition: top 1s;
+    }
+
+    .hover-menu {
+        color: #FFFFFF;
+    }
+
+    .navigation--responsive ul {
+        display: block;
+        list-style: none;
+        /* height: 70vh; */
+        /* display: flex; */
+        flex-direction: column;
+        /*  align-items: flex-start; */
+        /*  justify-content: space-around; */
+
+    }
+
+    .navigation--responsive div {
+        display: block;
+        list-style: none;
+        /* height: 70vh; */
+        /* display: flex; */
+        flex-direction: column;
+        /*  align-items: flex-start; */
+        /*  justify-content: space-around; */
+
+    }
+
+    .nav-top-menu {
+        margin-top: -85px;
+        padding-left: 0px;
+    }
+
+    .nav-item {
+        color: #F2F2F2;
+    }
+
+    .navigation--responsive div li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation--responsive li a {
+        text-decoration: none;
+        color: #F2F2F2;
+    }
+
+    .navigation--responsive div a {
+        text-decoration: none;
+        color: #F2F2F2;
+    }
+
+
+    #toggle:checked~.navigation--responsive {
+        top: 0vh;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .customer-login li,
+    .mini-nav li,
+    form input {
+        display: none;
+    }
+
+
+    .grey-container,
+    .outer-container {
+        height: 80px;
+    }
+
+    .logo {
+        margin-top: -15px;
+        margin-bottom: -50px;
+        height: 100px;
+        width: 20%;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 40px;
+    }
+
+    .shonen-jump-container img,
+    .shonen-jump-container {
+        width: 850px;
+        margin: 0;
+        position: relative;
+        left: -49px;
+    }
+
+    body .main-info {
+        width: 100%;
+    }
+
+    .chapters-grid {
+        display: flex;
+        flex-shrink: 1;
+    }
+
+    .pos-overflow-hide-img {
+        border: 0;
+        max-width: 100%;
+    }
+
+    .section-see-all {
+        position: relative !important;
+        left: 89% !important;
+    }
+
+}
+
+@media (max-width: 720px) {
+    label[for="toggle"] {
+        color: #FFFFFF;
+    }
+
+    .hover-menu {
+        display: block;
+        position: relative;
+        top: -35px;
+        left: 35px;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    .mini-nav-menu {
+        display: flex;
+        margin-top: 85px;
+        padding-left: 20px;
+    }
+
+    .mini-nav-items:hover {
+        color: #F2F2F2;
+    }
+
+    svg.hamburger {
+        display: block;
+    }
+
+    .navigation--responsive {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #2E2E2E;
+        color: #FFFFFF;
+        width: 300px;
+        position: absolute;
+        height: 80vh;
+        top: -100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        transition: top 1s;
+    }
+
+    .hover-menu {
+        color: #FFFFFF;
+    }
+
+    .navigation--responsive ul {
+        display: block;
+        list-style: none;
+        /* height: 70vh; */
+        /* display: flex; */
+        flex-direction: column;
+        /*  align-items: flex-start; */
+        /*  justify-content: space-around; */
+
+    }
+
+    .nav-top-menu {
+        margin-top: -85px;
+        padding-left: 0px;
+    }
+
+    .nav-item {
+        color: #F2F2F2;
+    }
+
+    .navigation--responsive div li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation--responsive li a {
+        text-decoration: none;
+        color: #F2F2F2;
+    }
+
+    .navigation--responsive div a {
+        text-decoration: none;
+        color: #F2F2F2;
+    }
+
+
+    #toggle:checked~.navigation--responsive {
+        top: 0vh;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .customer-login li,
+    .mini-nav li,
+    form input {
+        display: none;
+    }
+
+
+    .grey-container,
+    .outer-container {
+        height: 80px;
+    }
+
+    .logo {
+        margin-top: -15px;
+        margin-bottom: -50px;
+        height: 100px;
+        width: 20%;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 40px;
+    }
+
+    .shonen-jump-container img,
+    .shonen-jump-container {
+        width: 850px;
+        margin: 0;
+        position: relative;
+        left: -49px;
+    }
+
+    body .main-info {
+        width: 100%;
+    }
+
+    .chapters-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .manga-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .manga {
+        width: 47.3624454148% !important;
+    }
+
+    .manga-title {
+        font-size: 20px !important;
+    }
+
+    .latest-chapter-number {
+        font-size: 16px !important;
+    }
+
+    .chapter-release-date {
+        font-size: 12px !important;
+    }
+
+    #section-title {
+        font-size: 28px !important;
+    }
+
+    .section-tagline {
+        font-size: 20px !important;
+    }
+
+    #whats-hot-this-week {
+        font-size: 20px !important;
+    }
+
+    .section-title {
+        font-size: 20px !important;
+    }
+
+    .section-see-all {
+        position: relative !important;
+        top: 870px !important;
+        bottom: 0px !important;
+        left: 0px !important;
+    }
+
+    .see-all-link {
+        font-weight: 700 !important;
+    }
+}
+
+
+
+
+
 body {
     margin: 0px;
     background-color: #444;
@@ -51,18 +425,25 @@ li {
 
 .grey-container {
     margin: 0px;
-    width: 74%;
+    width: 100%;
     height: 110px;
     background-color: #dedede;
     display: flex;
 }
 
+.inner-container {
+    position: relative;
+    right: 1%;
+    width: 100%;
+}
+
 .mini-nav {
     display: flex;
     align-items: flex-end;
-    margin-left: -905px;
-    margin-bottom: 10px;
-    margin-top: 50px;
+    margin-top: 13px;
+    position: relative;
+    left: 68px;
+    width: 90%;
 
 }
 
@@ -71,6 +452,7 @@ li {
     margin-left: 70px;
     height: 50px;
     align-items: flex-end;
+    width: 80%;
 
 
 }
@@ -109,6 +491,8 @@ li {
     display: flex;
     width: 26%;
     background-color: #FF0000;
+    /* position: relative;
+    left: 15.3%; */
 }
 
 .viz-logo {
@@ -143,7 +527,8 @@ li {
 }
 
 .search-container {
-    margin-left: 310px;
+    position: relative;
+    left: 30%;
 }
 
 input[type="search"]::placeholder {
@@ -231,10 +616,11 @@ input[type="search"]:focus {
 
 .manga-chapter {
     /* padding: 0px 30px;*/
+    padding: 0 2.1834061135%;
     margin: 15px 0px;
-    max-width: 85.875rem;
+    /* max-width: 85.875rem;*/
     margin-left: auto;
-    margin-right: auto;
+    margin-right: -22px;
 }
 
 .shonen-jump-container {
@@ -248,28 +634,43 @@ input[type="search"]:focus {
 
 .big-shonen-jump {
     border: 0;
-    width: 1134px;
+    width: 109%;
     height: 159.891px;
 }
 
-/*.chapter-rows {
-    margin: 15px 0px;
-    padding: 0px 30px;
-} */
-
 .latest-free-chapters-title {
     margin: 15px 0px 30px 0px;
+    position: relative;
+    right: 30px;
 }
 
-.section-title {
+#section-title {
     margin: 10px 0px;
-    font-family: "Avenir Next", sans-serif;
     font-weight: 700;
     font-size: 56px;
     text-transform: uppercase;
     line-height: 1;
+}
 
+.section-title {
+    line-height: 1;
+    font-size: 39px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 0px 28px;
+    position: relative;
+    right: 30px;
+}
 
+#whats-hot-this-week {
+    line-height: 1;
+    font-size: 39px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    position: relative;
+    right: 30px;
 }
 
 .section-tagline {
@@ -285,9 +686,8 @@ input[type="search"]:focus {
     text-decoration: none;
 }
 
-.section-see-all {
-    left: 1235px;
-    /* top: 118.500px; */
+#section-see-all {
+    left: 1185px;
     font-size: 20px;
     right: 0;
     bottom: 0;
@@ -295,7 +695,15 @@ input[type="search"]:focus {
     margin-top: -40px;
     display: block;
     position: relative;
-    /*  position: absolute; */
+}
+
+.section-see-all {
+    font-size: 20px;
+    position: relative;
+    right: 0;
+    bottom: 30px;
+    left: 92.5%;
+    display: block;
 }
 
 .see-all-link {
@@ -303,7 +711,6 @@ input[type="search"]:focus {
     transition-duration: 0.2s;
     font-size: 20px;
     text-decoration: none;
-    font-family: "Avenir Next", sans-serif;
     font-weight: 500;
 }
 
@@ -323,15 +730,17 @@ input[type="search"]:focus {
 .chapters-grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .manga {
     margin-right: 2.1834061135%;
-    /* width: 23.3624454148%; */
+    width: 22.3624454148%;
     background-color: #2E2E2E;
     margin-bottom: 30px;
     position: relative;
-    left: 30px;
+    /* left: 30px; */
+    float: left;
 }
 
 .manga:hover {
@@ -346,6 +755,11 @@ input[type="search"]:focus {
     font-weight: 600;
 }
 
+.manga-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 /*.choujin-overflow-hide*/
 .pos-overflow-hide {
@@ -356,9 +770,9 @@ input[type="search"]:focus {
 /*.choujin-overflow-hide*/
 .pos-overflow-hide img {
     border: 0;
-    /*  max-width: 100%; */
+    max-width: 100%;
     /* width: 320.7px; */
-    height: 245.578px;
+    /*height: 245.578px; */
 }
 
 .manga-title {
@@ -399,7 +813,6 @@ input[type="search"]:focus {
     color: #FFFFFF;
 }
 
-
 .chapter-release-date {
     line-height: 1;
     font-size: 16px;
@@ -408,11 +821,28 @@ input[type="search"]:focus {
     color: #FFFFFF;
 }
 
+.section-two-title-container {
+    padding: 25px;
+    padding-bottom: 15px;
+}
+
+.section-four-title-container {
+    padding-top: 25px;
+    padding-bottom: 0px;
+}
+
+.section-six-title-container {
+    padding-top: 25px;
+    padding-bottom: 0px;
+}
+
 .whats-hot-this-week {
     background-image: url('https://dw9to29mmj727.cloudfront.net/sections/2016/82897-82179_13875_READ_header_2000x800_options_colours_grey30.png');
-    padding-top: 30px;
-    padding-bottom: 30px;
+    /* padding-top: 30px; */
+    /* padding-bottom: 30px; */
+    padding: 0 2.1834061135%;
     display: block;
+    margin-right: -22px;
 }
 
 .row-pos-two {
@@ -422,92 +852,43 @@ input[type="search"]:focus {
     /* max-width: 85.875rem; */
     margin-left: auto;
     margin-right: auto;
-}
-
-/* .section-two-title-container {
-    /* margin-bottom: 30px; */
-/* margin-top: 15px */
-
-
-.section-two-title {
-    line-height: 1;
-    font-size: 39px;
-    /* float: left; */
-    /* margin-right: 60px; */
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: 500;
-    padding: 0px 28px;
-}
-
-.section-two-see-all {
-    font-size: 20px;
-    position: relative;
-    right: 0;
-    bottom: 30px;
-    left: 92.5%;
-    display: block;
-}
-
-.section-two-see-all-link {
-    color: #2E2E2E;
-    background: transparent;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.section-two-see-all-link:hover {
-    color: #FF0000;
-    transition-duration: 0.2s;
-}
-
-.whats-hot-this-week-container {
-    display: flex;
-    flex-wrap: wrap;
+    padding-bottom: 25px;
 }
 
 .jump-into-a-new-series {
     background-color: #F2F2F2;
     margin-top: 60px;
     margin-bottom: 60px;
-}
-
-.section-three-title {
-    line-height: 1;
-    font-size: 39px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: 500;
-    padding: 0px 28px;
-
-}
-
-.section-three-see-all {
-    font-size: 20px;
-    position: relative;
-    right: 0;
-    bottom: 30px;
-    left: 92.5%;
-    display: block;
-}
-
-.section-three-see-all-link {
-    color: #2E2E2E;
-    background: transparent;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.section-three-see-all-link:hover {
-    color: #FF0000;
-    transition-duration: 0.2s;
-}
-
-.jump-into-a-new-series-container {
-    display: flex;
-    flex-wrap: wrap;
+    padding: 0 2.1834061135%;
+    margin-right: -22px;
 }
 
 #font-size {
     font-size: 27.5px;
+}
+
+.latest-anime-tie-ins {
+    background-image: url('https://dw9to29mmj727.cloudfront.net/sections/2016/82897-82179_13875_READ_header_2000x800_options_colours_grey30.png');
+    /*padding-top: 30px;*/
+    /* padding-bottom: 30px; */
+    padding: 0 2.1834061135%;
+    display: block;
+    margin-right: -22px;
+}
+
+.fan-favorites {
+    background-color: #F2F2F2;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0 2.1834061135%;
+    margin-right: -22px;
+}
+
+.new-series-in-the-vault {
+    background-image: url('https://dw9to29mmj727.cloudfront.net/sections/2016/82897-82179_13875_READ_header_2000x800_options_colours_grey30.png');
+    /*padding-top: 30px;*/
+    /* padding-bottom: 30px; */
+    padding: 0 2.1834061135%;
+    display: block;
+    margin-right: -22px;
 }

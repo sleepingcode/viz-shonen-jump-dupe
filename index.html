@@ -9,11 +9,41 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>VIZ | Read Free Shounen Jump Manga</title>
 </head>
 
 <body>
+    <label for="toggle">
+        <i class="fas fa-bars hamburger"></i>
+        <div class="hover-menu">MENU</div>
+    </label>
+    <input type="checkbox" name="toggle" id="toggle">
+    <nav class="navigation--responsive">
+        <ul class="mini-nav-menu">
+            <li><a href="https://www.viz.com/read" class="mini-nav-items">READ</a></li>
+            <li><a href="https://www.viz.com/watch" class="mini-nav-items">WATCH</a></li>
+            <li><a href="https://www.viz.com/shonenjump" class="mini-nav-items">SHONEN JUMP</a></li>
+            <li><a href="https://www.viz.com/community" class="mini-nav-items">COMMUNITY</a></li>
+            <li><a href="https://www.viz.com/calendar/2022/11" class="mini-nav-items">CALENDER</a></li>
+        </ul>
+        <div class="nav-top-menu">
+            <li class="nav-list"><a class="nav-item" id="first-nav-item">Manga & Anime Favorites</a></li>
+            <li class="nav-list"><a href="https://www.viz.com/naruto" class="nav-item">Naruto</a></li>
+            <li class="nav-list"><a href="https://www.viz.com/bleach" class="nav-item">Bleach</a></li>
+            <li class="nav-list"><a href="https://www.viz.com/chainsaw-man" class="nav-item">Chainsaw Man</a></li>
+            <li class="nav-list"><a href="https://www.viz.com/pokemon" class="nav-item">Pokémon</a></li>
+            <li class="nav-list"><a href="https://www.viz.com/demon-slayer-kimetsu-no-yaiba" class="nav-item">Demon
+                    Slayer</a></li>
+            <li class="nav-list"><a href="https://www.viz.com/my-hero-academia" class="nav-item">My Hero
+                    Academia</a>
+            </li>
+            <li class="nav-list"><a href="https://www.viz.com/shonenjump" class="nav-item">Free Manga!</a></li>
+        </div>
+
+    </nav>
+
     <div class="nav-bar">
         <nav class="nav-top">
             <li class="nav-list"><a class="nav-item" id="first-nav-item">Manga & Anime Favorites</a></li>
@@ -32,41 +62,44 @@
     <main>
         <div class="outer-container">
             <div class="grey-container">
-                <div class="customer-login">
-                    <li><a href="" class="login-items">Log In</a></li>
-                    <li><a href="" class="login-items">Sign Up</a></li>
-                    <li><a href="" class="login-items"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                fill="currentColor" class="heart-Svg">
-                                <path
-                                    d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z" />
-                            </svg>
-                        </a></li>
-                    <li><a href="https://www.viz.com/cart" class="login-items"><svg xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 20 20" fill="currentColor" class="cart-Svg">
-                                <path
-                                    d="M1 1.75A.75.75 0 011.75 1h1.628a1.75 1.75 0 011.734 1.51L5.18 3a65.25 65.25 0 0113.36 1.412.75.75 0 01.58.875 48.645 48.645 0 01-1.618 6.2.75.75 0 01-.712.513H6a2.503 2.503 0 00-2.292 1.5H17.25a.75.75 0 010 1.5H2.76a.75.75 0 01-.748-.807 4.002 4.002 0 012.716-3.486L3.626 2.716a.25.25 0 00-.248-.216H1.75A.75.75 0 011 1.75zM6 17.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15.5 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
-                            </svg>
-                        </a></li>
-                    <li><a href="https://www.viz.com/account/library" class="login-items">My Library</a></li>
-                    <div class="search-container">
-                        <form action="/search" method="GET">
-                            <input id="search-input" name="search" type="search" class="searchBar"
-                                placeholder="Find a title or a character..." autocomplete="off">
-                            <button type="submit" title="submit search" class="search-button">
-                            </button>
-                        </form>
+                <div class="inner-container">
+                    <div class="customer-login">
+                        <li><a href="" class="login-items">Log In</a></li>
+                        <li><a href="" class="login-items">Sign Up</a></li>
+                        <li><a href="" class="login-items"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                    fill="currentColor" class="heart-Svg">
+                                    <path
+                                        d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z" />
+                                </svg>
+                            </a></li>
+                        <li><a href="https://www.viz.com/cart" class="login-items"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="cart-Svg">
+                                    <path
+                                        d="M1 1.75A.75.75 0 011.75 1h1.628a1.75 1.75 0 011.734 1.51L5.18 3a65.25 65.25 0 0113.36 1.412.75.75 0 01.58.875 48.645 48.645 0 01-1.618 6.2.75.75 0 01-.712.513H6a2.503 2.503 0 00-2.292 1.5H17.25a.75.75 0 010 1.5H2.76a.75.75 0 01-.748-.807 4.002 4.002 0 012.716-3.486L3.626 2.716a.25.25 0 00-.248-.216H1.75A.75.75 0 011 1.75zM6 17.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15.5 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                            </a></li>
+                        <li><a href="https://www.viz.com/account/library" class="login-items">My Library</a></li>
+                        <div class="search-container">
+                            <form action="/search" method="GET">
+                                <input id="search-input" name="search" type="search" class="searchBar"
+                                    placeholder="Find a title or a character..." autocomplete="off">
+                                <button type="submit" title="submit search" class="search-button">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="mini-nav">
+                        <li><a href="https://www.viz.com/read" class="mini-nav-items">READ</a></li>
+                        <li><a href="https://www.viz.com/watch" class="mini-nav-items">WATCH</a></li>
+                        <li><a href="https://www.viz.com/shonenjump" class="mini-nav-items">SHONEN JUMP</a></li>
+                        <li><a href="https://www.viz.com/community" class="mini-nav-items">COMMUNITY</a></li>
+                        <li><a href="https://www.viz.com/calendar/2022/11" class="mini-nav-items">CALENDER</a></li>
                     </div>
                 </div>
-                <div class="mini-nav">
-                    <li><a href="https://www.viz.com/read" class="mini-nav-items">READ</a></li>
-                    <li><a href="https://www.viz.com/watch" class="mini-nav-items">WATCH</a></li>
-                    <li><a href="https://www.viz.com/shonenjump" class="mini-nav-items">SHONEN JUMP</a></li>
-                    <li><a href="https://www.viz.com/community" class="mini-nav-items">COMMUNITY</a></li>
-                    <li><a href="https://www.viz.com/calendar/2022/11" class="mini-nav-items">CALENDER</a></li>
+                <div class="logo">
+                    <img src="viz-logo.png" alt="viz logo" class="viz-logo">
                 </div>
-            </div>
-            <div class="logo">
-                <img src="viz-logo.png" alt="viz logo" class="viz-logo">
             </div>
         </div>
         <section>
@@ -91,13 +124,13 @@
             <section class="manga-chapter">
                 <div class="chapter-rows">
                     <div class="latest-free-chapters-title">
-                        <h3 class="section-title">latest free chapters</h3>
+                        <h3 id="section-title">latest free chapters</h3>
                         <h4 class="section-tagline">Hyped on the <i>BLEACH: Thousand-Year Blood War</i> anime? We're
                             making
                             <i>Bleach</i>, chapters 480-489 FREE to everyone until Friday! <a
                                 href="https://www.viz.com/shonenjump/chapters/bleach#480">Read now</a>!
                         </h4>
-                        <div class="section-see-all">
+                        <div id="section-see-all">
                             <a href="/read/shonenjump/section/free-chapters" class="see-all-link">See all > </a>
                         </div>
                     </div>
@@ -238,15 +271,15 @@
             <section class="whats-hot-this-week">
                 <div class="row-pos-two">
                     <div class="section-two-title-container">
-                        <h3 class="section-two-title">What's hot this week!</h3>
-                        <div class="section-two-see-all">
+                        <h3 id="whats-hot-this-week">What's hot this week!</h3>
+                        <div class="section-see-all">
                             <a href="https://www.viz.com/read/shonenjump/section/hot-series"
-                                aria-label="see all chapters" class="section-two-see-all-link">
+                                aria-label="see all chapters" class="see-all-link">
                                 See all >
                             </a>
                         </div>
                     </div>
-                    <div class="whats-hot-this-week-container">
+                    <div class="manga-container">
                         <div class="manga">
                             <a href="https://www.viz.com/shonenjump/chapters/one-piece" class="manga-main-page-link">
                                 <div class="pos-overflow-hide">
@@ -318,15 +351,15 @@
             <section class="jump-into-a-new-series">
                 <div class="row-pos-two">
                     <div class="section-three-title-container">
-                        <h3 class="section-three-title">Jump into a new series!</h3>
-                        <div class="section-three-see-all">
+                        <h3 class="section-title">Jump into a new series!</h3>
+                        <div class="section-see-all">
                             <a href="https://www.viz.com/read/shonenjump/section/new-series"
-                                aria-label="see all chapters" class="section-three-see-all-link">
+                                aria-label="see all chapters" class="see-all-link">
                                 See all >
 
                         </div>
                     </div>
-                    <div class="jump-into-a-new-series-container">
+                    <div class="manga-container">
                         <div class="manga">
                             <a href="https://www.viz.com/shonenjump/chapters/akane-banashi"
                                 class="manga-main-page-link">
@@ -397,10 +430,237 @@
                                 <span class="chapter-release-date"><i>November 6</i></span>
                             </a>
                         </div>
-
                     </div>
                 </div>
+            </section>
+            <section class="latest-anime-tie-ins">
+                <div class="row-pos-two">
+                    <div class="section-four-title-container">
+                        <h3 class="section-title">Latest anime tie-ins!</h3>
+                        <div class="section-see-all">
+                            <a href="https://www.viz.com/read/shonenjump/section/anime-tie-ins" class="see-all-link">See
+                                all ></a>
+                        </div>
+                    </div>
+                    <div class="manga-container">
+                        <div class="manga">
+                            <a href="https://www.viz.com/shonenjump/chapters/my-hero-academia"
+                                class="manga-main-page-link">
+                                <div class="pos-overflow-hide">
+                                    <img src="my-hero-academia.jpeg" alt="my hero academia manga cover">
+                                </div>
+                                <div class="manga-title">
+                                    My Hero Academia
+                                </div>
+                            </a>
+                            <a href="https://www.viz.com/shonenjump/my-hero-academia-chapter-372/chapter/25771?action=read"
+                                class="chapter-details">
+                                <span class="latest-chapter-number">Latest: Chapter 372</span>
+                                <br>
+                                <span class="chapter-release-date"><i>November 6</i></span>
+                            </a>
+                        </div>
+                        <div class="manga">
+                            <a href="https://www.viz.com/shonenjump/chapters/romantic-killer"
+                                class="manga-main-page-link">
+                                <div class="pos-overflow-hide">
+                                    <img src="romantic-killer.jpeg" alt="romantic killer manga cover">
+                                </div>
+                                <div class="manga-title">
+                                    Romantic Killer
+                                </div>
+                            </a>
+                            <a href="https://www.viz.com/shonenjump/romantic-killer-chapter-9/chapter/25676?action=read"
+                                class="chapter-details">
+                                <span class="latest-chapter-number">Latest: Chapter 9</span>
+                                <br>
+                                <span class="chapter-release-date"><i>October 18</i></span>
+                            </a>
+                        </div>
+                        <div class="manga">
+                            <a href="https://www.viz.com/shonenjump/chapters/bleach" class="manga-main-page-link">
+                                <div class="pos-overflow-hide">
+                                    <img src="bleach.jpeg" alt="Bleach manga cover">
+                                </div>
+                                <div class="manga-title">
+                                    Bleach
+                                </div>
+                            </a>
+                            <a href="https://www.viz.com/shonenjump/bleach-chapter-686/chapter/16275?action=read"
+                                class="chapter-details">
+                                <span class="latest-chapter-number">Latest: Chapter 686</span>
+                                <br>
+                            </a>
+                        </div>
+                        <div class="manga">
+                            <a href="https://www.viz.com/shonenjump/chapters/chainsaw-man" class="manga-main-page-link">
+                                <div class="pos-overflow-hide">
+                                    <img src="chainsaw-man.jpeg" alt="chainsaw man manga cover">
+                                </div>
+                                <div class="manga-title">
+                                    Chainsaw Man
+                                </div>
+                            </a>
+                            <a href="https://www.viz.com/shonenjump/chainsaw-man-chapter-111/chapter/25817?action=read"
+                                class="chapter-details">
+                                <span class="latest-chapter-number">Latest: Chapter 111</span>
+                                <br>
+                                <span class="chapter-release-date"><i>November 8</i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="fan-favorites">
+                <div class="row-pos-two">
+                    <div class="section-five-title-container">
+                        <h3 class="section-title">Fan favorites!</h3>
+                        <div class="section-see-all">
+                            <a href="https://www.viz.com/read/shonenjump/section/fan-favorites" class="see-all-link">See
+                                all ></a>
+                        </div>
+                    </div>
+                    <div class="manga-container">
+                        <div class="manga">
+                            <a href="https://www.viz.com/shonenjump/chapters/naruto" class="manga-main-page-link">
+                                <div class="pos-overflow-hide">
+                                    <img src="naruto.jpeg" alt="naruto manga cover">
+                                </div>
+                                <div class="manga-title">
+                                    Naruto
+                                </div>
+                            </a>
+                            <a href="https://www.viz.com/shonenjump/naruto-chapter-700/chapter/5541?action=read"
+                                class="chapter-details">
+                                <span class="latest-chapter-number">Latest: Chapter 700</span>
+                                <br>
+                            </a>
+                        </div>
+                        <div class="manga">
+                            <a href="https://www.viz.com/shonenjump/chapters/food-wars" class="manga-main-page-link">
+                                <div class="pos-overflow-hide">
+                                    <img src="food-wars.jpeg" alt="food wars: shokugeki no soma manga cover">
+                                </div>
+                                <div class="manga-title">
+                                    Food Wars!: Shokugeki no Soma
+                                </div>
+                            </a>
+                            <a href="https://www.viz.com/shonenjump/food-wars-chapter-315-4/chapter/19453?action=read"
+                                class="chapter-details">
+                                <span class="latest-chapter-number">Latest: Chapter 315.4</span>
+                                <br>
+                            </a>
+                        </div>
+                        <div class="manga">
+                            <a href="https://www.viz.com/shonenjump/chapters/the-promised-neverland"
+                                class="manga-main-page-link">
+                                <div class="pos-overflow-hide">
+                                    <img src="the-promised-neverland.jpeg" alt="the promised neverland manga cover">
+                                </div>
+                                <div class="manga-title">
+                                    The Promised Neverland
+                                </div>
+                            </a>
+                            <a href="https://www.viz.com/shonenjump/the-promised-neverland-chapter-181-4/chapter/21853?action=read"
+                                class="chapter-details">
+                                <span class="latest-chapter-number">Latest: Chapter 181.4</span>
+                                <br>
+                            </a>
+                        </div>
+                        <div class="manga">
+                            <a href="https://www.viz.com/shonenjump/chapters/haikyu" class="manga-main-page-link">
+                                <div class="pos-overflow-hide">
+                                    <img src="haikyu.jpeg" alt="haikyu manga cover">
+                                </div>
+                                <div class="manga-title">
+                                    Haikyu!!
+                                </div>
+                            </a>
+                            <a href="https://www.viz.com/shonenjump/haikyu-chapter-402-1/chapter/24570?action=read"
+                                class="chapter-details">
+                                <span class="latest-chapter-number">Latest: Chapter 402.1</span>
+                                <br>
+                            </a>
+                        </div>
+                    </div>
+            </section>
+            <section class="new-series-in-the-vault">
+                <div class="row-pos-two">
+                    <div class="section-six-title-container">
+                        <h3 class="section-title">New series in the vault!</h3>
+                        <div class="section-see-all">
+                            <a href="https://www.viz.com/read/shonenjump/section/new-series-in-the-vault"
+                                class="see-all-link">See
+                                all ></a>
+                        </div>
+                    </div>
+                    <div class="manga-container">
+                        <div class="manga">
+                            <a href="https://www.viz.com/shonenjump/chapters/knights-of-the-zodiac"
+                                class="manga-main-page-link">
+                                <div class="pos-overflow-hide">
+                                    <img src="knights-of-the-zodiac.jpeg" alt="knights of the zodiac manga cover">
+                                </div>
+                                <div class="manga-title">
+                                    Knights of the Zodiac (Saint Seiya)
+                                </div>
+                            </a>
+                            <a href="https://www.viz.com/shonenjump/knights-of-the-zodiac-chapter-111/chapter/7734?action=read"
+                                class="chapter-details">
+                                <span class="latest-chapter-number">Latest: Chapter 111</span>
+                                <br>
+                            </a>
+                        </div>
+                        <div class="manga">
+                            <a href="https://www.viz.com/shonenjump/chapters/hoshin-engi" class="manga-main-page-link">
+                                <div class="pos-overflow-hide">
+                                    <img src="hoshin-engi.jpeg" alt="hoshin engi manga cover">
+                                </div>
+                                <div class="manga-title">
+                                    Hoshin Engi
+                                </div>
+                            </a>
+                            <a href="https://www.viz.com/shonenjump/hoshin-engi-chapter-204/chapter/25358?action=read"
+                                class="chapter-details">
+                                <span class="latest-chapter-number">Latest: Chapter 204</span>
+                                <br>
+                            </a>
+                        </div>
+                        <div class="manga">
+                            <a href="https://www.viz.com/shonenjump/chapters/dragon-quest" class="manga-main-page-link">
+                                <div class="pos-overflow-hide">
+                                    <img src="dragon-quest.jpeg" alt="dragon quest manga cover">
+                                </div>
+                                <div class="manga-title">
+                                    Dragon Quest: The Aventure of Dai
+                                </div>
+                            </a>
+                            <a href="https://www.viz.com/shonenjump/dragon-quest-the-adventure-of-dai-chapter-75/chapter/25929?action=read"
+                                class="chapter-details">
+                                <span class="latest-chapter-number">Latest: Chapter 75</span>
+                                <br>
+                                <span class="chapter-release-date"><i>November 22</i></span>
+                            </a>
+                        </div>
+                        <div class="manga">
+                            <a href="https://www.viz.com/shonenjump/chapters/tokyo-ghoul-jack"
+                                class="manga-main-page-link">
+                                <div class="pos-overflow-hide">
+                                    <img src="tokyo-ghoul-jack.jpeg" alt="tokyo ghoul jack manga cover">
+                                </div>
+                                <div class="manga-title">
+                                    Tokyo Ghoul [Jack]
+                                </div>
+                            </a>
+                            <a href="https://www.viz.com/shonenjump/tokyo-ghoul-jack-chapter-7/chapter/4548?action=read"
+                                class="chapter-details">
+                                <span class="latest-chapter-number">Latest: Chapter 7</span>
+                                <br>
+                            </a>
+                        </div>
 
+
+                    </div>
             </section>
         </div>
 
