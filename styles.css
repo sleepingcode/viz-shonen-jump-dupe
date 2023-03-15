@@ -954,3 +954,132 @@ input[type="search"]:focus {
     display: block;
     margin-right: -22px;
 }
+
+.new-volumes {
+    background-color: #F2F2F2;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0 2.1834061135%;
+    margin-right: -22px;
+}
+
+.section-seven-title-container {
+    padding-top: 25px;
+    padding-bottom: 0px;
+}
+
+.manga-article {
+    margin-right: 2.1834061135%;
+    width: 26.3624454148%;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+    padding-top: 2%;
+    position: relative;
+    /* left: 30px; */
+    float: left;
+}
+
+figure {
+    height: 0;
+    padding-top: 100%;
+    position: relative;
+    display: block;
+    margin: 0;
+}
+
+.heart-link {
+    color: #949494;
+    z-index: 2;
+    position: absolute;
+    bottom: 95%;
+    left: 14%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.series-debut {
+    color: #FFFFFF;
+    background-color: #2E2E2E;
+    z-index: 2;
+    float: right;
+    position: absolute;
+    bottom: 95.4%;
+    right: 0.3%;
+    padding: 2%;
+}
+
+.manga-article-info {
+    bottom: 0;
+    /* height: 30%; */
+    width: 48%;
+    left: 25%;
+    position: absolute;
+    right: 0;
+    top: 5%;
+    /* width: 100%; */
+    z-index: 1;
+    overflow: hidden;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    background-color: transparent;
+    transition: transform 0.15s ease;
+}
+
+.manga-article-info:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.manga-article-img {
+    display: inline-block;
+    max-width: 90%;
+    max-height: 80%;
+    vertical-align: middle;
+    border: 0;
+}
+
+.manga-article-img:hover {
+    transform: scale(1.05);
+}
+
+.article-title-container {
+    /* padding-right: 15px;
+    padding-left: 15px; */
+    padding-right: 65px;
+    padding-left: 48px;
+    position: relative;
+    bottom: 14%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.article-classification {
+    margin-bottom: 5px;
+}
+
+.classification-type {
+    color: #949494;
+}
+
+.classification-type:hover {
+    color: #FF0000;
+    transition-duration: 0.1s;
+}
+
+.article-title {
+    color: #2E2E2E;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.article-title:hover {
+    color: #FF0000;
+    transition-duration: 0.1s;
+}
